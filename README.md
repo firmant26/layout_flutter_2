@@ -25,9 +25,34 @@
 
 - Langkah 6: Membuat ListView dan itemBuilder.
   Untuk menampilkan ListView pada praktikum ini digunakan itemBuilder. Data diambil dari definisi model yang telah dibuat sebelumnya. Untuk menunjukkan batas data satu dan berikutnya digunakan widget Card. Kode yang telah umum pada bagian ini tidak ditampilkan. Gambaran kode yang dibutuhkan dapat anda lihat sebagai berikut.
-  
+  SOURCE CODE (lib/pages/home_page.dart):
+  <img width="1430" height="2130" alt="image" src="https://github.com/user-attachments/assets/fa5de313-36e6-4bfe-a964-6c4b44f575da" />
+  DISPLAY :
+  <img width="499" height="455" alt="image" src="https://github.com/user-attachments/assets/ddb0e7be-d38a-481e-ac43-71dabc69d1c4" />
+
 
 - Langkah 7: Menambahkan aksi pada ListView.
   Item pada ListView saat ini ketika ditekan masih belum memberikan aksi tertentu. Untuk menambahkan aksi pada ListView dapat digunakan widget InkWell atau GestureDetector. Perbedaan utamanya InkWell merupakan material widget yang memberikan efek ketika ditekan. Sedangkan GestureDetector bersifat umum dan bisa juga digunakan untuk gesture lain selain sentuhan. Pada praktikum ini akan digunakan widget InkWell.
   Untuk menambahkan sentuhan, letakkan cursor pada widget pembuka Card. Kemudian gunakan shortcut quick fix dari VSCode (Ctrl + . pada Windows atau Cmd + . pada MacOS). Sorot menu wrap with widget... Ubah nilai widget menjadi InkWell serta tambahkan named argument onTap yang berisi fungsi untuk berpindah ke halaman ItemPage. Ilustrasi potongan kode dapat anda lihat pada potongan berikut.
-  
+  SOURCE CODE (lib/pages/item_page.dart) :
+  <img width="1180" height="976" alt="image" src="https://github.com/user-attachments/assets/1877178b-e48b-48f9-8a1f-e80c7f1142fe" />
+  DISPLAY :
+  <img width="497" height="477" alt="image" src="https://github.com/user-attachments/assets/ca859457-ba8e-452b-a62f-e2526d389759" />
+  <img width="496" height="726" alt="image" src="https://github.com/user-attachments/assets/2b4edbb0-4464-49db-8bec-d29aa020fd43" />
+
+- TUGAS PRAKTIKUM 2 -
+1. Untuk melakukan pengiriman data ke halaman berikutnya, cukup menambahkan informasi arguments pada penggunaan Navigator. Perbarui kode pada bagian Navigator menjadi seperti berikut.
+  SOURCE CODE(home_page.dart dan item_page.dart): 
+  <img width="472" height="82" alt="image" src="https://github.com/user-attachments/assets/df55cf9d-7396-4784-98a2-1872914fd6b5" />
+  <img width="538" height="59" alt="image" src="https://github.com/user-attachments/assets/307286fe-af3a-4236-a126-32b0d0e2047a" />
+
+2. Pembacaan nilai yang dikirimkan pada halaman sebelumnya dapat dilakukan menggunakan ModalRoute. Tambahkan kode berikut pada blok fungsi build dalam halaman ItemPage. Setelah nilai didapatkan, anda dapat menggunakannya seperti penggunaan variabel pada umumnya. (https://docs.flutter.dev/cookbook/navigation/navigate-with-arguments)
+  SOURCE CODE(item_page.dart):
+  <img width="1430" height="1088" alt="image" src="https://github.com/user-attachments/assets/1499056b-4ced-40bf-b1e0-14f9687c2619" />
+
+3. Pada hasil akhir dari aplikasi belanja yang telah anda selesaikan, tambahkan atribut foto produk, stok, dan rating. Ubahlah tampilan menjadi GridView seperti di aplikasi marketplace pada umumnya.
+  SOURCE CODE(item.dart dan home_page.dart):
+  <img width="1430" height="752" alt="image" src="https://github.com/user-attachments/assets/d77f753c-dae7-4118-850f-afabf702d773" />
+  <img width="1430" height="2726" alt="image" src="https://github.com/user-attachments/assets/57258191-9345-4fe1-910f-c777318cd27b" />
+
+
